@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1.Explain the difference between Absolute and Relative positioning.</h1>
+    <table style="width: 70%">
+      <tr>
+        <th>Absolute Positioning</th>
+        <th>Relative Positioning</th>
+      </tr>
+
+      <tr>
+        <td>
+          Absolute - the element is positioned absolutely to its first
+          positioned parent.
+        </td>
+        <td>
+          Relative - the element is positioned relative to its normal position.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          When position:absolute is given to an element the element can be
+          placed precisely where one wants to.
+        </td>
+        <td>
+          When position:relative is given to an element without any other
+          attributes (top, bottom, left, right) nothing will happen.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          The element is positioned nearest to the first relatively or
+          absolutely positioned parent element.
+        </td>
+        <td>
+          But when an attribute left:20px is added the element moves 20px to the
+          right from its normal position. The element effects no other element
+          on the layout. Other content will not be adjusted to fit into any gap
+          left by the element.
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          When there is no parent element the absolutely positioned element is
+          positioned directly to the HTML page itself.
+        </td>
+        <td>
+          The child of this element can be positioned within this block only. So
+          position:relative has its limitations.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
